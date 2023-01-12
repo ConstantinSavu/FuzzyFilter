@@ -16,7 +16,7 @@ In order to obtain results that can be measured both qualitatively and quantitat
 In the deNoise.m file is the code for noise removal. The implementation of the algorithm is as follows:
 
 Pixel clasification:
-  1. For each pixel in the image that has a value of 0 or 1 (i.e. jump and paper noise) an initial window of radius 1 is set around the pixel (i.e. 9 pixels in total). If such a window cannot be generated because the pixel is too close to the edge of the image, then that pixel is ignored.
+  1. For each pixel in the image that has a value of 0 or 1 (i.e. salt and paper noise) an initial window of radius 1 is set around the pixel (i.e. 9 pixels in total). If such a window cannot be generated because the pixel is too close to the edge of the image, then that pixel is ignored.
   
   2. For each generated window 3 values are set, the average of the pixels above the central pixel (m1), the average of the pixels below the central pixel (m2) and the variation of the pixels in the image (v).
   
